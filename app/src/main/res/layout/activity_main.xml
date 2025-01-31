@@ -5,7 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/min_color"
     tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        />
 
 
     <com.google.android.material.bottomappbar.BottomAppBar
@@ -13,26 +20,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         app:fabAlignmentMode="center"
-        app:fabAnchorMode="cradle">
+        app:fabAnchorMode="cradle"
+        app:fabCradleMargin="12dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_View"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
-            app:menu="@menu/menu_bottom_app_bar" />
+            app:itemActiveIndicatorStyle="@null"
+            app:itemIconTint="@color/bottom_nav_item_color"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/menu_bottom_app_bar"
+            app:titleTextColor="@color/bottom_nav_item_color"
+            />
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
-        app:fabSize="normal"
-        app:layout_anchor="@id/bottom_app_bar"
-        app:srcCompat = "@drawable/baseline_add_24"
+        android:backgroundTint="@color/blue"
         app:borderWidth="1dp"
+        app:layout_anchor="@id/bottom_app_bar"
         app:shapeAppearanceOverlay="@style/fab_3_rounded"
+        app:srcCompat="@drawable/baseline_add_24"
         app:tint="@color/white" />
 
 
