@@ -23,7 +23,7 @@
         android:background="@color/white"
         app:fabAlignmentMode="center"
         app:fabAnchorMode="cradle"
-        app:fabCradleMargin="12dp">
+        app:fabCradleMargin="16dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation_View"
@@ -42,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/blue"
-        app:borderWidth="1dp"
+        app:borderWidth="3dp"
         app:layout_anchor="@id/bottom_app_bar"
         app:shapeAppearanceOverlay="@style/fab_3_rounded"
         app:srcCompat="@drawable/baseline_add_24"
