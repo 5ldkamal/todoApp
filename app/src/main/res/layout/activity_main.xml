@@ -7,12 +7,12 @@
     android:layout_height="match_parent"
     android:background="@color/min_color"
     tools:context=".MainActivity">
+
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="?attr/actionBarSize"
-        />
+        android:layout_marginBottom="?attr/actionBarSize" />
 
 
     <com.google.android.material.bottomappbar.BottomAppBar
@@ -34,12 +34,11 @@
             app:itemIconTint="@color/bottom_nav_item_color"
             app:labelVisibilityMode="unlabeled"
             app:menu="@menu/menu_bottom_app_bar"
-            app:titleTextColor="@color/bottom_nav_item_color"
-            />
+            app:titleTextColor="@color/bottom_nav_item_color" />
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floating_action_button"
+        android:id="@+id/fab_add_task"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/blue"

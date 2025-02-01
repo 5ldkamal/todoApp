@@ -9,19 +9,30 @@ import com.example.todo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var viewBinding: ActivityMainBinding
+    private lateinit var viewBinding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewBinding =  ActivityMainBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
+        setupFAB()
     }
 
     private fun  setupBottomNavView() {
         viewBinding.bottomNavigationView.setOnItemSelectedListener {
             when (it) {
-R.id.
             }
             return@setOnItemSelectedListener true
         }
+    }
+
+    private fun  setupFAB() {
+        viewBinding.fabAddTask.setOnClickListener{
+            openAddTask()
+        }
+    }
+
+    private fun openAddTask() {
+        val addingTaskFragment = AddingTaskFragment()
+        addingTaskFragment.show(supportFragmentManager , null)
     }
 }
