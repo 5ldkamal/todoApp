@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.todo"
-        minSdk = 24
+        minSdk = 30
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -41,6 +41,8 @@ android {
 }
 
 dependencies {
+    // The view calendar library for Android
+    implementation(libs.calendarView)
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.material3.android)
     ksp(libs.androidx.room.compiler)
