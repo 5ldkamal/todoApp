@@ -6,6 +6,6 @@ import com.example.todo.dataLayer.DataBaseManager
 class TaskApplication: Application() {
     override fun onCreate() {
         super.onCreate()
-        //DataBaseManager.init(this)
+        DataBaseManager.init(this)
     }
 }

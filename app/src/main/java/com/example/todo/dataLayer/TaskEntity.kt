@@ -11,7 +11,7 @@ import java.util.TimeZone
 data class Task(
     @PrimaryKey(true)
     val id: Int? = null,
-    val title: String? = null,
+    var title: String? = null,
     var details: String? = null,
     var date: Date? = null,
     var time: String? = null,

@@ -62,19 +62,18 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="Select Date:"
             android:textSize="22sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/date_editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
             android:clickable="true"
             android:focusable="false"
-            android:hint="Dec 12"
-            android:inputType="date"
+            android:hint="Date"
             android:textAlignment="center" />
     </LinearLayout>
     <!--    Time-->
@@ -92,7 +91,7 @@
         <TextView
             android:id="@+id/select_time_textView"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="Select Time:"
             android:textSize="22sp" />
 

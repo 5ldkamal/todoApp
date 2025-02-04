@@ -16,14 +16,14 @@ abstract class DataBaseManager : RoomDatabase(){
         private var instance: DataBaseManager? = null
         fun init(applicationContext: Context) {
             if (instance == null) {
-                instance = Room.databaseBuilder(applicationContext, DataBaseManager::class.java, "")
+                instance = Room.databaseBuilder(applicationContext, DataBaseManager::class.java, "Tasks Database")
                     .allowMainThreadQueries()
                     .fallbackToDestructiveMigration()
                     .build()
             }
         }
 
-        fun getInstance(applicationContext: Context): DataBaseManager {
+        fun getInstance(): DataBaseManager {
             return instance!!
         }
     }
